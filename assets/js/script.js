@@ -103,31 +103,45 @@ if (thisHour > 18) {
 }
 
 // following code from Brian Wood shared on Discord...I am still struggling to figure out how this works but I have a very general sense
+// when the 'save' button [.saveBtn] is 'clicked' for a particular time-block, it executes the function...
 $(".saveBtn").on("click", function () {
-    // Get nearby values of the description in JQuery
+    // to get the values of the description [.description] associated with the time-block in JQuery
     var text = $(this).siblings(".description").val();
+    // within the [id] for that time-block
     var time = $(this).parent().attr("id");
-// Save text in local storage
+// and saves the text in local storage with the [div id] as the key for the [localStorage]
     localStorage.setItem(time, text);
 });
 
+// then to retrieve the content located in [localStorage]
+// we call up the string stored in the [div id (hour9)] and place it in the [textArea id (block9)]
+
 $("#block9.description").val(localStorage.getItem("hour9"));
 
+// 1000
 $("#block10.description").val(localStorage.getItem("hour10"));
 
+// 1100
 $("#block11.description").val(localStorage.getItem("hour11"));
 
+// 1200
 $("#block12.description").val(localStorage.getItem("hour12"));
 
+// 1300
 $("#block13.description").val(localStorage.getItem("hour13"));
 
+// 1400
 $("#block14.description").val(localStorage.getItem("hour14"));
 
+// 1500
 $("#block15.description").val(localStorage.getItem("hour15"));
 
+// 1600
 $("#block16.description").val(localStorage.getItem("hour16"));
 
+// 1700
 $("#block17.description").val(localStorage.getItem("hour17"));
 
+// 1800
 $("#block18.description").val(localStorage.getItem("hour18"));
 
