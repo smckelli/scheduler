@@ -1,4 +1,5 @@
 
+
 var updateTime = function() {
 
 document.getElementById("currentDay").innerHTML = moment().format('MMMM Do YYYY, HH:mm:ss');
@@ -100,4 +101,33 @@ if (thisHour > 18) {
 } else if (thisHour < 18) {
     $("#block18").addClass("future");
 }
+
+// following code from Brian Wood shared on Discord...I am still struggling to figure out how this works but I have a very general sense
+$(".saveBtn").on("click", function () {
+    // Get nearby values of the description in JQuery
+    var text = $(this).siblings(".description").val();
+    var time = $(this).parent().attr("id");
+// Save text in local storage
+    localStorage.setItem(time, text);
+});
+
+$("#block9.description").val(localStorage.getItem("hour9"));
+
+$("#block10.description").val(localStorage.getItem("hour10"));
+
+$("#block11.description").val(localStorage.getItem("hour11"));
+
+$("#block12.description").val(localStorage.getItem("hour12"));
+
+$("#block13.description").val(localStorage.getItem("hour13"));
+
+$("#block14.description").val(localStorage.getItem("hour14"));
+
+$("#block15.description").val(localStorage.getItem("hour15"));
+
+$("#block16.description").val(localStorage.getItem("hour16"));
+
+$("#block17.description").val(localStorage.getItem("hour17"));
+
+$("#block18.description").val(localStorage.getItem("hour18"));
 
