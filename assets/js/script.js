@@ -145,3 +145,10 @@ $("#block17.description").val(localStorage.getItem("hour17"));
 // 1800
 $("#block18.description").val(localStorage.getItem("hour18"));
 
+// clear the local storage
+
+$("#clearButton").click(function (event) {
+    event.preventDefault;
+    $("textarea").val("");
+    localStorage.clear();
+});
