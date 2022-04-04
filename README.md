@@ -26,4 +26,4 @@ THEN the saved events persist
 
 # Screenshot
 
-![image](./images/screenshot.jpg)
+![image](./assets/images/screenshot.png)
