@@ -1,6 +1,6 @@
 # Work Day Scheduler
 # Description
-This is a simple calendar application to track any event from each hour of a typical business day between the hour sof 0900-1800.
+This is a simple calendar application to track any event from each hour of a typical business day between the hours of 0900-1800.
 
 # User Story
 
@@ -26,4 +26,4 @@ THEN the saved events persist
 
 # Screenshot
 
-![image](./assets/images/screenshot.jpg)
+![image](./images/screenshot.jpg)
